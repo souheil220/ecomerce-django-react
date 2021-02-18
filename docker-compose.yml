@@ -8,6 +8,7 @@ services:
       - "8000:8000"
     volumes:
       - ./backend:/backend
+    container_name: backend
 
   frontend:
     build:
@@ -16,5 +17,6 @@ services:
       - "3000:3000"
     volumes:
       - ./frontend:/app/frontend
+    container_name: frontend
     depends_on:
       - backend
