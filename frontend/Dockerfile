@@ -8,4 +8,4 @@ COPY ./frontend /app/frontend
 
 WORKDIR /app/frontend/
 
-CMD  sh -c "cd frontend && yarn start"
+CMD  sh -c "cd frontend && npm start"
